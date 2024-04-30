@@ -1,38 +1,40 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  background-image: url('Asset/beach-nassau.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+input, button, ul {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  input, button, ul {
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 1024px) {
+  input, button, ul {
+    width: 30%;
   }
 }
